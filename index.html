@@ -6,6 +6,22 @@
     
     background-color: #17C3B2;
 }
+.card {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+   }
 </style>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <title>me is dumb</title>
@@ -35,3 +51,7 @@ Also my email is iancvarela@gmail.com. Message me!</h2>
   <p> </p>
   <a href="https://iansteam.github.io/imagesgallery">Visit my animation gallery!</a>
 </div>
+  <div class="card">
+        <img src="images/card-back.jpg" alt="Card Back">
+        <img src="images/card-front.jpg" class="img-top" alt="Card Front">
+    </div>
